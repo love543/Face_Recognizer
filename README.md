@@ -75,7 +75,15 @@ pip install tensorflow numpy scikit-learn
     ```python
     model = models.Sequential()
     model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(250, 250, 3)))
-    # ... (add more layers as needed)
+    model.add(layers.MaxPooling2D((2, 2)))
+    model.add(layers.Conv2D(64, (3, 3), activation='relu'))
+    model.add(layers.MaxPooling2D((2, 2)))
+    model.add(layers.Conv2D(128, (3, 3), activation='relu'))
+    model.add(layers.MaxPooling2D((2, 2)))
+    model.add(layers.Flatten())
+    model.add(layers.Dense(512, activation='relu'))
+    model.add(layers.Dropout(0.5))
+    model.add(layers.Dense(len(train_generator.class_indices), activation='softmax'))
     ```
 
 6. Compile the model:
