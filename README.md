@@ -112,13 +112,13 @@ pip install tensorflow numpy scikit-learn
 
 ## Results
 
-- Training accuracy: _(add training accuracy from history)_
-- Validation accuracy: _(add validation accuracy from history)_
-- Test accuracy: _(display test accuracy)_
+- Training accuracy: _(99.69%)_
+- Validation accuracy: _(97.31%)_
+- Test accuracy: _(99.68%)_
 
 ## Author
 
-- Your Name
+- Love Sharma
 
 ## License
 
